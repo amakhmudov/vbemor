@@ -16,27 +16,27 @@
 
   <body>
     <div id="container">
-      <header id="header" class="shadow-xl shadow-body-light/5">
+      <header id="header" class="shadow-xl shadow-brand/5">
         <div class="container">
           <div class="flex items-center justify-between py-6">
-            <a href="#" class="flex items-center space-x-px text-2xl">
+            <a href="#" class="flex items-center space-x-px text-2xl no-underline">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-9 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
               </svg>
-              <strong>Virtual</strong>
-              <span>Bemor</span>
+              <strong class="text-body">Virtual</strong>
+              <span class="text-body">Bemor</span>
             </a>
 
             <nav>
               <ul class="header__nav">
                 <li><a href="#">Bosh sahifa</a></li>
                 <li><a href="#">Yangliklar</a></li>
-                <li>
-                  <a href="#">Narxlar <sup class="badge">New</sup></a>
-                </li>
+                <li><a href="#">Narxlar</a><sup class="badge">New</sup></li>
                 <li><a href="#">Yordam</a></li>
                 <li><a href="#">Aloqa</a></li>
                 <li><a href="#">Rating</a></li>
+                <li><a href="#">En / Ru</a></li>
+                <li><a href="#">Contact</a></li>
                 <li>
                   <button class="hover:text-brand">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mt-1.5 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -54,23 +54,196 @@
       </header>
 
       <main id="main">
-        <div class="section container py-20">
-          <div class="flex items-center">
-            <div class="w-6/12">
+        <section class="container py-20">
+          <div class="-mx-10 flex items-center">
+            <div class="w-6/12 px-10">
               <div class="max-w-lg space-y-4">
-                <p class="text-sm font-extrabold uppercase tracking-widest text-brand">Yetuklik sari intiling</p>
+                <p class="text-xs font-extrabold uppercase tracking-widest text-brand">Yetuklik sari intiling</p>
 
                 <h1 class="text-4xl font-extrabold leading-snug tracking-tight">Savollar <span class="text-brand">11250+</span> dan oshdi, qo'shimcha <span class="text-brand">bemorni davolash</span> usullari qo'shildi!</h1>
 
-                <p class="font-light text-body-light">Biz bilan o'z bilimingiz <span class="font-semibold text-body">virtual 🧐</span> tarzda sinab ko'ring</p>
+                <p class="text-body-light">Biz bilan o'z bilimingizni <span class="font-bold text-body-dark">virtual</span> tarzda sinab ko'ring</p>
+
+                <p class="!mt-12 flex items-center space-x-2">
+                  <a href="#" class="btn">Tizimni sinab ko'ring</a>
+                  <a href="#" class="btn-s">Batafsil ma'lumot</a>
+                </p>
               </div>
             </div>
 
-            <div class="w-6/12">
-              <img src="img/home-hero.webp" alt="home hero" />
+            <div class="w-6/12 px-10">
+              <div class="relative">
+                <img src="img/home-hero.webp" alt="home hero" class="relative z-10 drop-shadow-2xl" />
+
+                <svg class="absolute top-10 -left-10 z-[-1] h-full w-full rotate-45 scale-150 fill-current text-brand/10 blur-lg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M43.5,-76.5C55.9,-68.2,65.2,-55.6,71.9,-42.1C78.5,-28.6,82.7,-14.3,81.3,-0.8C79.8,12.7,72.8,25.3,64.7,36.3C56.5,47.2,47.2,56.3,36.2,63.3C25.2,70.2,12.6,75,-1.1,76.9C-14.8,78.9,-29.7,78,-43.7,72.8C-57.7,67.6,-70.9,58.1,-79.3,45.2C-87.7,32.4,-91.2,16.2,-90.7,0.3C-90.3,-15.7,-85.9,-31.4,-76.4,-42.3C-66.9,-53.1,-52.3,-59.2,-38.7,-66.9C-25.1,-74.5,-12.6,-83.7,1.5,-86.3C15.6,-88.8,31.1,-84.8,43.5,-76.5Z" transform="translate(100 100)"></path>
+                </svg>
+
+                <img src="img/dots-rect-shape.webp" alt="dots rect shape" class="absolute -left-16 top-1/2 -translate-y-1/2" />
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <section class="bg-brand py-10">
+          <div class="container">
+            <ul class="-mx-4 flex items-center font-medium text-white">
+              <li class="flex w-3/12 items-center space-x-3 px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="62" class="flex-shrink-0 fill-current">
+                  <path
+                    d="M27.846.015c-.195-.007-.39-.011-.586-.013-12.163-.14-22.279 9.41-22.948 21.666-.024.385-.033 3.686-.035 4.504l-4.162 11a1.78 1.78 0 0 0 .194 1.632c.326.478.865.764 1.441.764h5.697v6.49c0 1.542.62 3.019 1.716 4.093a5.625 5.625 0 0 0 4.105 1.61c.256-.009 2.527-.022 6.394-.039h.01a2.375 2.375 0 0 1 2.28 1.727v7.27c0 .431.347.781.775.781h19.586a.77.77 0 0 0 .563-.246.784.784 0 0 0 .21-.582c-.008-.13-.762-13.186-.002-21.422.207-2.237 2.32-7.596 2.51-8.074a21.512 21.512 0 0 0-.499-20.68C41.463 4.195 35.015.277 27.845.017Zm16.358 30.471a.75.75 0 0 0-.031.069c-.098.243-2.395 5.991-2.631 8.55-.659 7.142-.199 17.804-.046 20.832H23.5v-6.592a.787.787 0 0 0-.023-.19 3.925 3.925 0 0 0-3.806-2.996h-.017c-2.744.012-6.09.028-6.435.04a4.082 4.082 0 0 1-2.979-1.17 4.159 4.159 0 0 1-1.244-2.972v-7.27a.778.778 0 0 0-.774-.782H1.75a.2.2 0 0 1-.166-.088.205.205 0 0 1-.022-.188l4.212-11.134a.784.784 0 0 0 .05-.277c.005-1.613.017-4.277.034-4.56.617-11.33 9.901-20.197 21.146-20.195l.24.001c.182.002.364.006.546.013a18.78 18.78 0 0 1 9.452 2.889c8.672 5.526 11.7 16.84 6.962 26.02Z"
+                  />
+                  <path
+                    d="M27 3.75c-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15-.01-8.28-6.72-14.99-15-15Zm8.165 25.667v-1.54l1.796-1.703a.781.781 0 0 0 .243-.566v-1.502a2.348 2.348 0 1 0-1.56 0v1.166l-1.797 1.704a.78.78 0 0 0-.243.567v2.908c-.918.52-1.893.93-2.907 1.22V25.6l2.667-3.657a.778.778 0 0 0 .15-.46v-4.115a2.349 2.349 0 1 0-1.56 0v3.86l-2.668 3.658a.783.783 0 0 0-.15.46v6.673c-.634.102-1.275.158-1.919.168v-8.502l1.479-1.479a.78.78 0 0 0 .229-.552V11.377a2.349 2.349 0 1 0-1.561 0v9.953l-1.48 1.478a.782.782 0 0 0-.228.553v8.761a13.115 13.115 0 0 1-.754-.097V20.098a.78.78 0 0 0-.229-.552l-2.15-2.149v-1.223a2.349 2.349 0 1 0-1.56 0v1.546a.78.78 0 0 0 .228.552l2.15 2.149v11.261c-.812-.23-1.6-.537-2.355-.916v-5.937a.78.78 0 0 0-.488-.723l-2.141-.865v-1.69a2.349 2.349 0 1 0-1.561 0v2.217a.78.78 0 0 0 .488.724l2.141.864v4.49a13.44 13.44 0 1 1 15.74-.43Zm1.259-6.736a.788.788 0 1 1 0-1.576.788.788 0 0 1 0 1.576Zm-3.69-6.739a.788.788 0 1 1 0-1.575.788.788 0 0 1 0 1.575Zm-4.59-5.99a.788.788 0 1 1 0-1.576.788.788 0 0 1 0 1.576Zm-6.4 4.797a.787.787 0 1 1 0-1.574.787.787 0 0 1 0 1.574Zm-4.167 5.376a.788.788 0 1 1 .002-1.576.788.788 0 0 1-.003 1.576Z"
+                  />
+                </svg>
+
+                <p>Fundamental bilimlarni biz&nbsp;bilan o'rganing</p>
+              </li>
+
+              <li class="flex w-3/12 items-center space-x-3 px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" class="flex-shrink-0 fill-current">
+                  <path d="M44.765.025H3.235C1.451.025 0 1.433 0 3.165v28.517c0 1.731 1.451 3.14 3.235 3.14h25.79v-1.148H3.236c-1.15 0-2.088-.893-2.088-1.992V3.164c0-1.098.937-1.991 2.088-1.991h41.53c1.15 0 2.088.893 2.088 1.991v28.518c0 1.099-.937 1.992-2.088 1.992h-3.221v1.147h3.22c1.785 0 3.236-1.408 3.236-3.139V3.164c0-1.73-1.451-3.139-3.235-3.139Z" />
+                  <path
+                    d="M18.963 17.232V5.643a.766.766 0 0 0-.765-.765H6.158a.766.766 0 0 0-.764.765v11.59c0 .421.343.764.765.764h12.039a.766.766 0 0 0 .765-.765Zm-1.148-.382H6.541V6.026h11.274V16.85ZM22.041 8.426h.005l18.404-.143a.574.574 0 0 0-.005-1.148h-.004l-18.404.144a.574.574 0 1 0 .004 1.147ZM41.04 14.787a.574.574 0 0 0-.575-.57h-.004l-18.404.144a.574.574 0 0 0 .004 1.147h.005l18.404-.143a.574.574 0 0 0 .57-.578ZM6.685 23.073h.005l16.958-.137a.574.574 0 1 0-.01-1.147l-16.957.137a.574.574 0 0 0 .004 1.147ZM6.706 30.155h.004l16.959-.137a.574.574 0 0 0-.005-1.147h-.005l-16.958.137a.574.574 0 0 0 .005 1.147ZM34.987 31.617l.118.001c2.567 0 4.687-1.99 4.75-4.489a4.496 4.496 0 0 0-1.256-3.232 4.785 4.785 0 0 0-3.38-1.482c-2.617-.06-4.803 1.952-4.868 4.488a4.497 4.497 0 0 0 1.257 3.232c.883.926 2.1 1.46 3.38 1.482Zm-3.489-4.685c.048-1.876 1.656-3.37 3.604-3.37h.09a3.644 3.644 0 0 1 2.576 1.126c.623.646.962 1.515.94 2.412-.048 1.905-1.704 3.418-3.694 3.37a3.644 3.644 0 0 1-2.575-1.126 3.357 3.357 0 0 1-.94-2.412Z"
+                  />
+                  <path
+                    d="M41.516 32.374c.529-.063 1.076-.179 1.376-.643.346-.536.13-1.18-.06-1.75-.082-.245-.22-.656-.18-.786.039-.118.373-.37.574-.52.488-.367 1.04-.783 1.058-1.44.016-.655-.515-1.099-.984-1.49-.192-.16-.513-.428-.545-.547-.034-.131.124-.535.219-.776.219-.558.467-1.19.148-1.744-.32-.552-.993-.657-1.587-.748-.255-.039-.682-.105-.775-.197-.09-.089-.155-.511-.195-.764-.093-.595-.199-1.27-.755-1.592-.544-.315-1.173-.076-1.728.135-.245.093-.654.249-.787.212-.117-.037-.373-.366-.526-.563-.371-.478-.792-1.021-1.441-1.037-.65-.011-1.096.507-1.49.967-.163.19-.435.508-.554.538-.135.031-.536-.144-.776-.248-.545-.237-1.163-.506-1.721-.217-.571.295-.71.964-.832 1.554-.052.25-.138.67-.232.755-.098.088-.528.132-.785.159-.598.062-1.275.132-1.622.67-.348.536-.131 1.18.059 1.75.082.245.22.656.18.786-.039.118-.373.37-.573.52-.489.367-1.042.783-1.058 1.44-.017.655.514 1.099.983 1.49.192.16.513.428.545.547.034.13-.124.534-.219.775-.219.559-.467 1.192-.148 1.744.32.553.993.657 1.588.749.11.017.254.039.389.066a.571.571 0 0 0-.079.165l-3.602 12.438a.574.574 0 0 0 .805.674l3.372-1.67 2.367 2.845a.574.574 0 0 0 .99-.203l2.874-9.59 2.23 9.006a.574.574 0 0 0 .98.25l2.509-2.731 3.283 1.828a.574.574 0 0 0 .822-.685l-4.097-12.122ZM28.08 30.779c-.022-.134.135-.533.22-.75.19-.486.388-.989.263-1.479-.122-.476-.529-.815-.922-1.144-.19-.158-.54-.45-.571-.58.037-.128.402-.403.6-.552.41-.308.833-.627.979-1.096.15-.483-.022-.996-.188-1.491-.074-.222-.21-.63-.181-.763.109-.082.54-.127.775-.151.52-.054 1.058-.11 1.434-.449.373-.336.483-.864.588-1.374.05-.238.14-.678.231-.764.131-.019.526.153.74.246.486.211.988.43 1.49.315.485-.11.833-.517 1.17-.91.163-.192.468-.547.587-.567.126.026.413.395.567.594.317.409.645.832 1.124.965.495.137 1.007-.057 1.501-.245.232-.088.615-.234.747-.211.09.102.159.537.196.773.08.514.163 1.046.52 1.4.358.356.892.438 1.409.518.233.035.66.101.765.188.021.135-.135.534-.22.75-.19.487-.388.99-.263 1.48.122.476.529.815.922 1.143.19.158.54.45.571.58-.037.129-.402.404-.6.552-.41.309-.833.627-.979 1.097-.15.483.022.995.187 1.49.075.223.21.63.182.763-.109.083-.54.128-.775.152-.52.054-1.059.11-1.434.448-.373.337-.483.865-.588 1.375-.05.238-.14.677-.231.763-.131.02-.526-.153-.74-.246-.486-.21-.989-.429-1.49-.315-.483.11-.83.514-1.166.906l-.016.012-.017.015a.373.373 0 0 0-.023.02l-.02.02a.38.38 0 0 0-.036.043l-.015.019a.544.544 0 0 0-.03.047l-.009.015c-.156.176-.339.365-.425.38-.126-.026-.413-.396-.566-.594-.318-.408-.646-.83-1.125-.964a1.306 1.306 0 0 0-.353-.047c-.383 0-.77.148-1.149.291-.231.088-.615.234-.747.212-.09-.103-.158-.537-.195-.773-.08-.515-.164-1.047-.52-1.401-.358-.356-.893-.438-1.41-.517-.232-.035-.66-.1-.764-.189Zm4.042 14.286-1.974-2.372a.574.574 0 0 0-.695-.147l-2.61 1.293 2.928-10.106c.102.376.274.72.624.923.545.315 1.174.076 1.73-.135.244-.093.653-.249.785-.212.118.037.373.366.526.563.37.476.788 1.014 1.43 1.036l-2.744 9.157Zm9.548-2.935a.574.574 0 0 0-.702.113l-2.093 2.278-2.402-9.701c.157-.18.353-.392.449-.417.134-.03.536.144.776.249.545.237 1.162.505 1.721.216.571-.295.71-.963.832-1.553.038-.212.092-.42.16-.625l3.638 10.765-2.38-1.325Z"
+                  />
+                </svg>
+
+                <p>Nafaqat certificat, haqiqiy&nbsp;bilim egasi bo'ling</p>
+              </li>
+
+              <li class="flex w-3/12 items-center space-x-3 px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" class="flex-shrink-0 fill-current">
+                  <path
+                    d="M3.58 45.663h23.072a3.507 3.507 0 0 0 3.457-2.943 3.507 3.507 0 0 0 2.93-3.455v-5.49a.618.618 0 0 0-1.237 0v5.49a2.269 2.269 0 0 1-2.266 2.266H6.566A2.269 2.269 0 0 1 4.3 39.265V3.574a2.269 2.269 0 0 1 2.266-2.267h17.408v5.284a2.681 2.681 0 0 0 2.678 2.678h5.15v3.31a.618.618 0 0 0 1.237 0V8.652a.616.616 0 0 0-.004-.062c0-.012-.003-.024-.005-.036l-.004-.024c-.002-.014-.006-.028-.01-.042l-.004-.016a.539.539 0 0 0-.015-.041l-.005-.015a.56.56 0 0 0-.018-.037l-.008-.018-.019-.032-.012-.02a.403.403 0 0 0-.02-.027l-.016-.02c-.007-.01-.014-.017-.022-.025l-.016-.019-7.828-7.96-.003-.003-.025-.023-.019-.017a.619.619 0 0 0-.046-.035l-.002-.001a.614.614 0 0 0-.346-.107H6.567A3.507 3.507 0 0 0 3.083 3.21 3.507 3.507 0 0 0 .077 6.675V42.16a3.506 3.506 0 0 0 3.502 3.503ZM25.21 6.59V2.199l5.736 5.834h-4.294A1.444 1.444 0 0 1 25.21 6.59Zm-23.897.084A2.27 2.27 0 0 1 3.064 4.47v34.796a3.506 3.506 0 0 0 3.502 3.502h22.269a2.27 2.27 0 0 1-2.183 1.66H3.58a2.269 2.269 0 0 1-2.266-2.267V6.675Z"
+                  />
+                  <path
+                    d="M22.944 12.2h-9.63a.618.618 0 0 0 0 1.235h9.63a.618.618 0 1 0 0-1.236ZM8.604 13.435h2.219a.618.618 0 1 0 0-1.236h-2.22a.618.618 0 0 0 0 1.236ZM8.604 20.08h6.1a.618.618 0 1 0 0-1.236h-6.1a.618.618 0 1 0 0 1.236ZM20.472 26.106a.618.618 0 0 0-.618-.618h-6.776a.618.618 0 0 0 0 1.236h6.776a.618.618 0 0 0 .618-.618ZM8.604 26.724h1.999a.618.618 0 1 0 0-1.236h-2a.618.618 0 0 0 0 1.236ZM20.7 33.369h2.244a.618.618 0 0 0 0-1.236H20.7a.618.618 0 0 0 0 1.236ZM8.604 33.369h9.469a.618.618 0 0 0 0-1.236h-9.47a.618.618 0 0 0 0 1.236ZM46.017 28.359v-7.922l.884-.368c.835-.348.96-.873.96-1.156 0-.282-.125-.807-.96-1.155L34.107 12.43c-.921-.384-2.364-.384-3.285 0l-12.794 5.327c-.835.348-.96.873-.96 1.155 0 .283.125.808.96 1.156l4.298 1.79v6.643c0 .341.277.618.618.618h.698c2.423 0 4.891 2.252 6.524 3.743 1.133 1.033 1.656 1.49 2.188 1.49.525 0 1.016-.43 2.172-1.491 1.625-1.49 4.081-3.742 6.43-3.742h.735a.618.618 0 0 0 .618-.618v-6.52l2.472-1.03v7.345a2.653 2.653 0 1 0 1.236.062ZM18.47 18.913a.93.93 0 0 1 .033-.014l12.794-5.327c.621-.259 1.713-.259 2.335 0l12.793 5.327.034.014-.034.015-12.793 5.327c-.622.259-1.713.259-2.335 0l-12.794-5.327a1.477 1.477 0 0 1-.033-.015Zm22.603 8.97h-.118c-2.829 0-5.498 2.448-7.264 4.068-.483.443-1.073.983-1.34 1.14-.27-.154-.864-.697-1.351-1.141-1.775-1.62-4.456-4.066-7.358-4.066h-.08v-5.511l7.26 3.023a4.834 4.834 0 0 0 3.285 0l6.966-2.9v5.388Zm4.197 4.454a1.424 1.424 0 0 1-.093-2.846.605.605 0 0 0 .37.024 1.426 1.426 0 0 1-.277 2.822Z"
+                  />
+                </svg>
+
+                <p>O'z ustingizda doimiy izlaning, to'htab qo'lmang</p>
+              </li>
+
+              <li class="flex w-3/12 items-center space-x-3 px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="45" class="flex-shrink-0 fill-current">
+                  <path d="M17.799 21.754c6.007 0 10.877-4.87 10.877-10.877C28.676 4.87 23.806 0 17.799 0 11.792 0 6.922 4.87 6.922 10.877c.005 6.005 4.872 10.871 10.877 10.877Zm0-19.696a8.819 8.819 0 1 1-8.82 8.819 8.829 8.829 0 0 1 8.82-8.819ZM17.862 24.418c-4.767.01-9.19 1.835-12.468 5.157C2.074 32.928.252 37.511.262 42.483c.002.272.11.532.302.728.196.193.462.3.74.298l26.643-.052v-2.05l-25.572.05c.219-4.028 1.8-7.71 4.517-10.447 2.883-2.922 6.786-4.531 10.98-4.531h.032a15.397 15.397 0 0 1 10.657 4.193l1.447-1.476a17.506 17.506 0 0 0-12.104-4.768c-.01-.01-.021-.01-.042-.01Z" />
+                  <path
+                    d="m45.542 30.136-7.013-1.059-3.094-6.303a1.04 1.04 0 0 0-.928-.576 1.028 1.028 0 0 0-.937.566l-3.189 6.251-7.023.957a1.034 1.034 0 0 0-.845.694c-.125.372-.023.781.262 1.054l5.043 4.925-1.25 6.89c-.072.384.086.776.406 1.007.317.236.744.268 1.094.082l6.304-3.208 6.252 3.301c.15.08.318.123.49.123.217.002.429-.067.604-.195.324-.229.49-.62.427-1.008l-1.146-6.91 5.116-4.843c.286-.27.39-.676.27-1.048a1.07 1.07 0 0 0-.843-.7Zm-5.854 5.709a1.098 1.098 0 0 0-.336 1.004l.998 5.978-5.43-2.853a1.168 1.168 0 0 0-1.078-.011l-5.476 2.772 1.09-5.955c.067-.37-.054-.749-.324-1.015l-4.374-4.255 6.102-.822c.38-.05.71-.28.882-.616l2.76-5.408 2.68 5.454c.164.34.491.576.87.627l6.08.913-4.444 4.187Z"
+                  />
+                </svg>
+
+                <p>Nazariyada o'rganilmagan kamchiliklarni aniqlang</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="container my-20">
+          <div class="mb-10 flex items-center justify-between">
+            <h1 class="category-header mb-0"><span>Yangiliklar</span></h1>
+
+            <a href="#" class="flex items-center space-x-2 text-sm">
+              <span>Barchasini o'qish</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="news -mx-3 flex">
+            <div class="news__item group w-4/12 space-y-4 px-3">
+              <p class="news__media"><img src="img/news/news-item-1.webp" alt="news item 1" class="group-hover:rotate-1 group-hover:scale-105" /></p>
+
+              <p class="flex items-center space-x-2"><a href="#" class="badge rounded">maktab</a></p>
+
+              <p class="flex items-center text-xs text-body-light">
+                <a href="#" class="text-body-light hover:text-brand">Abdulla Qurbonov</a>
+                <span class="px-2">&middot;</span>
+                <span>Iyun 15, 2022</span>
+                <span class="px-2">&middot;</span>
+                <span class="flex items-center space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span>1.025</span>
+                </span>
+              </p>
+
+              <hr class="border-t" />
+
+              <p class="text-lg font-bold text-body-dark line-clamp-2">Maktabga qaytish, yangi bilimlarni egallash vaqti keldi. Yangi uchrashuvlar, do'stlik, qiyinchiliklar hammasi endi yangi uslubda, yangi ko'rinishda...</p>
+
+              <p class="text-sm line-clamp-2">Boshlang'ich sinf o'quvchilarimiz shaxsan maktabga qaytishayotganda, yangi uchrashuvlar hamda qiyinchiliklar oldida dovdirab qolishadi</p>
+
+              <p class="text-sm"><a href="#">Batafsil o'qish</a></p>
+            </div>
+
+            <div class="news__item group w-4/12 space-y-4 px-3">
+              <p class="news__media"><img src="img/news/news-item-2.webp" alt="news item 2" class="group-hover:rotate-1 group-hover:scale-105" /></p>
+
+              <p class="flex items-center space-x-2"><a href="#" class="badge">institut</a><a href="#" class="badge">talabalar hayoti</a></p>
+
+              <p class="flex items-center text-xs text-body-light">
+                <a href="#" class="text-body-light hover:text-brand">Ahad Qayum</a>
+                <span class="px-2">&middot;</span>
+                <span>Iyun 7, 2022</span>
+                <span class="px-2">&middot;</span>
+                <span class="flex items-center space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span>780</span>
+                </span>
+              </p>
+
+              <hr class="border-t" />
+
+              <p class="text-lg font-bold text-body-dark line-clamp-2">Talabalar uchun ichki motivaciyaning ahamiyati va dolzarbligini bugungi kundagi barcha</p>
+
+              <p class="text-sm line-clamp-2">Institut talabalari ko'p hollar mantrani chaqirishadi: "Men hammadan yahshiman, aqlliman" - deb o'zlariga tasalli berishga urunadilar va shundan ichki hotirjamlik topadilar</p>
+
+              <p class="text-sm"><a href="#">Batafsil o'qish</a></p>
+            </div>
+
+            <div class="news__item group w-4/12 space-y-4 px-3">
+              <p class="news__media"><img src="img/news/news-item-3.webp" alt="news item 1" class="group-hover:rotate-1 group-hover:scale-105" /></p>
+
+              <p class="flex items-center space-x-2"><a href="#" class="badge">maktab</a></p>
+
+              <p class="flex items-center text-xs text-body-light">
+                <a href="#" class="text-body-light hover:text-brand">DJ. Piligrim</a>
+                <span class="px-2">&middot;</span>
+                <span>Aprel 2, 2022</span>
+                <span class="px-2">&middot;</span>
+                <span class="flex items-center space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span>1.705</span>
+                </span>
+              </p>
+
+              <hr class="border-t" />
+
+              <p class="text-lg font-bold text-body-dark line-clamp-2">Qo'lda ruchka yordamida, yoki laptop bilan yozishmalarni qayd etib borish haqida boshqacha fikr yuritish vaqti keldi</p>
+
+              <p class="text-sm line-clamp-2">Barchamiz uchun odatga aylangan telefon yoki laptop yordamida yozishmalarni qayd etib borish qanchalik oson va vaqt tejashi mumkin?</p>
+
+              <p class="text-sm"><a href="#">Batafsil o'qish</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="container my-20">
+          <h1 class="category-header"><span>Top kategoriyalar</span></h1>
+        </section>
       </main>
 
       <footer id="footer">footer</footer>

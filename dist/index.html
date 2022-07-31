@@ -31,12 +31,12 @@
               <ul class="header__nav">
                 <li><a href="#">Bosh sahifa</a></li>
                 <li><a href="#">Yangliklar</a></li>
-                <li><a href="#">Narxlar</a><sup class="badge">New</sup></li>
+                <li><a href="#">Narxlar</a></li>
                 <li><a href="#">Yordam</a></li>
+                <li><a href="#">Demo</a><sup class="badge">New</sup></li>
                 <li><a href="#">Aloqa</a></li>
-                <li><a href="#">Rating</a></li>
+                <li><a href="#">Reyting</a></li>
                 <li><a href="#">En / Ru</a></li>
-                <li><a href="#">Contact</a></li>
                 <li>
                   <button class="hover:text-brand">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mt-1.5 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -45,8 +45,8 @@
                   </button>
                 </li>
                 <li class="relative"><span class="absolute inset-x-0 top-1/2 h-10 -translate-y-1/2 border-l border-body/20"></span></li>
-                <li><button class="whitespace-nowrap transition hover:text-brand hover:underline">Log In</button></li>
-                <li><button class="btn">Register</button></li>
+                <li><button class="whitespace-nowrap transition hover:text-brand hover:underline">Kirish</button></li>
+                <li><button class="btn">Ro'yhatdan o'tish</button></li>
               </ul>
             </nav>
           </div>
@@ -65,8 +65,8 @@
                 <p class="text-body-light">Biz bilan o'z bilimingizni <span class="font-bold text-body-dark">virtual</span> tarzda sinab ko'ring</p>
 
                 <p class="!mt-12 flex items-center space-x-2">
-                  <a href="#" class="btn">Tizimni sinab ko'ring</a>
-                  <a href="#" class="btn-s">Batafsil ma'lumot</a>
+                  <a href="#" class="btn py-4 text-base">Tizimni sinab ko'ring</a>
+                  <a href="#" class="btn-s py-4 text-base">Batafsil ma'lumot</a>
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@
               <div class="relative">
                 <img src="img/home-hero.webp" alt="home hero" class="relative z-10 drop-shadow-2xl" />
 
-                <svg class="absolute top-10 -left-10 z-[-1] h-full w-full rotate-45 scale-150 fill-current text-brand/10 blur-lg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <svg class="absolute top-10 -left-10 z-[-1] h-full w-full rotate-3 scale-110 fill-current text-brand/10 blur-lg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path d="M43.5,-76.5C55.9,-68.2,65.2,-55.6,71.9,-42.1C78.5,-28.6,82.7,-14.3,81.3,-0.8C79.8,12.7,72.8,25.3,64.7,36.3C56.5,47.2,47.2,56.3,36.2,63.3C25.2,70.2,12.6,75,-1.1,76.9C-14.8,78.9,-29.7,78,-43.7,72.8C-57.7,67.6,-70.9,58.1,-79.3,45.2C-87.7,32.4,-91.2,16.2,-90.7,0.3C-90.3,-15.7,-85.9,-31.4,-76.4,-42.3C-66.9,-53.1,-52.3,-59.2,-38.7,-66.9C-25.1,-74.5,-12.6,-83.7,1.5,-86.3C15.6,-88.8,31.1,-84.8,43.5,-76.5Z" transform="translate(100 100)"></path>
                 </svg>
 
@@ -242,7 +242,414 @@
         </section>
 
         <section class="container my-20">
-          <h1 class="category-header"><span>Top kategoriyalar</span></h1>
+          <div class="mb-10 flex items-center justify-between">
+            <h1 class="category-header mb-0"><span>Top kategoriyalar</span></h1>
+
+            <a href="#" class="flex items-center space-x-2 text-sm">
+              <span>Barchasini ko'rish</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="-mx-3 flex flex-wrap gap-y-6">
+            <div class="w-4/12 px-3">
+              <div class="group flex h-full flex-col space-y-6 rounded bg-brand/5 p-8 text-body-dark transition hover:bg-brand hover:text-white">
+                <img src="img/medicine-icons/cardiology.png" alt="cardiology" width="64" height="64" class="transition group-hover:invert" />
+
+                <div class="space-y-3">
+                  <p class="text-xl font-semibold">Kardiologiya</p>
+
+                  <p class="line-clamp-2">Mutahassislar tomonidan amaliy hamda nazariy bilimlarni o'z ichiga olgan bo'lim.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-4/12 px-3">
+              <div class="group flex h-full flex-col space-y-6 rounded bg-brand/5 p-8 text-body-dark transition hover:bg-brand hover:text-white">
+                <img src="img/medicine-icons/pulmonology.png" alt="pulmonology" width="64" height="64" class="transition group-hover:invert" />
+
+                <div class="space-y-3">
+                  <p class="text-xl font-semibold">Pulmonologiya</p>
+
+                  <p class="line-clamp-2">Hozirgi vaqt uchun eng aktual mutahassisliklardan biri, eng dolzarb nazariy bilimlarni o'z ichiga olgan bo'lim.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-4/12 px-3">
+              <div class="group flex h-full flex-col space-y-6 rounded bg-brand/5 p-8 text-body-dark transition hover:bg-brand hover:text-white">
+                <img src="img/medicine-icons/allergy.png" alt="allergy" width="64" height="64" class="transition group-hover:invert" />
+
+                <div class="space-y-3">
+                  <p class="text-xl font-semibold">Allergologiya</p>
+
+                  <p class="line-clamp-2">Yosh bolalarda, hamda kattalarda iqlimda uchraydigan, kundan kunga tobora oshib borayotkan kallaliklar bo'limi.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-4/12 px-3">
+              <div class="group flex h-full flex-col space-y-6 rounded bg-brand/5 p-8 text-body-dark transition hover:bg-brand hover:text-white">
+                <img src="img/medicine-icons/infection.png" alt="infection" width="64" height="64" class="transition group-hover:invert" />
+
+                <div class="space-y-3">
+                  <p class="text-xl font-semibold">Infekcion kasalliklar</p>
+
+                  <p class="line-clamp-2">Ayron, qiladi vayron, yoz pishiqchilik paytida avjiga chiqadigan kasalliklarga samarali davolash uslublari, hamda birinchi yordam ko'rsatish uchun mavzularni chuqur o'zlashtiring..</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-4/12 px-3">
+              <div class="group flex h-full flex-col space-y-6 rounded bg-brand/5 p-8 text-body-dark transition hover:bg-brand hover:text-white">
+                <img src="img/medicine-icons/dermotology.png" alt="dermatology" width="64" height="64" class="transition group-hover:invert" />
+
+                <div class="space-y-3">
+                  <p class="text-xl font-semibold">Dermatologiya</p>
+
+                  <p class="line-clamp-2">Yuqumli, teri tanosil kasalliklari bilan samarali kurashish uslublaridan habardor bo'ling.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-4/12 px-3">
+              <div class="group flex h-full flex-col space-y-6 rounded bg-brand/5 p-8 text-body-dark transition hover:bg-brand hover:text-white">
+                <img src="img/medicine-icons/lor.png" alt="lor" width="64" height="64" class="transition group-hover:invert" />
+
+                <div class="space-y-3">
+                  <p class="text-xl font-semibold">Otorinoloringolog</p>
+
+                  <p class="line-clamp-2">Ko'pchilik mensimaydigan, lekin eng talab qilingan yo'nalishlardan biri, ayqnisa yosh bolalarda ko'p uchrydigan isitma, burun oqish.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container my-20">
+          <div class="mb-10 space-y-3 text-center">
+            <h1 class="category-header mb-0"><span>Narxlar</span></h1>
+            <p class="text-lg">Turli qulaylik va tanlovlardan iborat taklif.</p>
+          </div>
+
+          <ul class="-mx-4 flex justify-center">
+            <li class="group w-4/12 px-4">
+              <div class="flex h-full flex-col space-y-8 rounded border-4 border-transparent p-6 shadow transition group-hover:border-4 group-hover:border-brand">
+                <div class="space-y-6 text-center">
+                  <p class="text-4xl font-semibold text-body">Talabalar</p>
+
+                  <p><strong class="text-5xl">$15</strong>/ yillik</p>
+
+                  <p>Talabalar uchun, tizimdagi barcha qulayliklardan iborat tanlov va to'lov uslubi.</p>
+                </div>
+
+                <ul class="!mb-8 space-y-3">
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Barcha kurslarni ko'ra olish</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Nazorat imtihonlarini topshira olish</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Imtihon javoblarini ko'ra olish</span>
+                  </li>
+
+                  <li class="flex space-x-2 opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Imtihonlarni tashkil etish imkoniyati</span>
+                  </li>
+
+                  <li class="flex space-x-2 opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Talabalarni qo'shish imkoniyati</span>
+                  </li>
+
+                  <li class="flex space-x-2 opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Mentorlarni qo'shish imkoniyati</span>
+                  </li>
+
+                  <li class="flex space-x-2 opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Kurslarni sotib olish imkoniyati</span>
+                  </li>
+
+                  <li class="flex space-x-2 opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Istalgancha talaba uchun nazorat imtihonlarini o'tkazish</span>
+                  </li>
+                </ul>
+
+                <a href="#" class="btn !mt-auto py-4 text-center text-base group-hover:bg-brand group-hover:text-white">Tarifni tanlash</a>
+              </div>
+            </li>
+
+            <li class="group w-4/12 px-4">
+              <div class="flex h-full flex-col space-y-8 rounded border-4 border-transparent p-6 shadow transition group-hover:border-4 group-hover:border-brand">
+                <div class="space-y-6 text-center">
+                  <p class="text-4xl font-semibold text-body">Universitetlar</p>
+
+                  <p><strong class="text-5xl">$55</strong>/ yillik</p>
+
+                  <p>Universitelar uchun, kengaytirilgan qulayliklardan iborat tanlov va to'lov uslubi.</p>
+                </div>
+
+                <ul class="!mb-8 space-y-3">
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Barcha kurslarni ko'ra olish</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Nazorat imtihonlarini topshira olish</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Imtihon javoblarini ko'ra olish</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Imtihonlarni tashkil etish imkoniyati</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Talabalarni qo'shish imkoniyati</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Mentorlarni qo'shish imkoniyati</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Kurslarni sotib olish imkoniyati</span>
+                  </li>
+
+                  <li class="flex space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+
+                    <span>Istalgancha talaba uchun nazorat imtihonlarini o'tkazish</span>
+                  </li>
+                </ul>
+
+                <a href="#" class="btn !mt-auto py-4 text-center text-base group-hover:bg-brand group-hover:text-white">Tarifni tanlash</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="container my-20">
+          <div class="mb-10 space-y-6">
+            <div class="space-y-6 text-center">
+              <p class="text-xs font-extrabold uppercase tracking-widest text-brand">Yetuklik sari intiling</p>
+
+              <ul class="flex items-center justify-center">
+                <li><img src="img/join-us/people-1.jpg" alt="people 1" width="500" height="500" class="h-16 w-16 translate-x-12 translate-y-2 overflow-hidden rounded-full border-4 border-white" /></li>
+                <li><img src="img/join-us/people-2.jpg" alt="people 2" width="500" height="500" class="h-20 w-20 translate-x-5 overflow-hidden rounded-full border-4 border-white" /></li>
+                <li><img src="img/join-us/people-3.jpg" alt="people 3" width="500" height="500" class="relative z-20 h-24 w-24 -translate-y-2 overflow-hidden rounded-full border-4 border-white" /></li>
+                <li><img src="img/join-us/people-4.jpg" alt="people 4" width="500" height="500" class="relative z-10 h-20 w-20 -translate-x-5 overflow-hidden rounded-full border-4 border-white" /></li>
+                <li><img src="img/join-us/people-5.jpg" alt="people 5" width="500" height="500" class="h-16 w-16 -translate-x-12 translate-y-2 overflow-hidden rounded-full border-4 border-white" /></li>
+              </ul>
+            </div>
+
+            <div class="space-y-3 text-center">
+              <h1 class="text-4xl font-extrabold leading-snug tracking-tight">Biz <span class="text-brand">10.466+</span> dan oshdik</h1>
+
+              <p class="text-lg">Tizimga qo'shiling, o'z bilimingizni <span class="font-bold text-body-dark">virtual</span> tarzda sinab ko'ring.</p>
+            </div>
+
+            <p class="text-center">
+              <a href="#" class="btn !mt-6 py-4 text-center text-base">Bizga qo'shiling</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="container my-20">
+          <div class="mb-10 flex items-center justify-between">
+            <h1 class="category-header mb-0"><span>Foydalanuvchilar fikrlari</span></h1>
+
+            <a href="#" class="flex items-center space-x-2 text-sm">
+              <span>Barchasini ko'rish</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="-mx-3 flex flex-wrap gap-y-6">
+            <div class="w-4/12 px-3">
+              <div class="relative flex h-full flex-col space-y-3 rounded bg-brand/5 p-8 text-body-light">
+                <span class="absolute -top-0 right-2 text-9xl text-brand/10">&rdquo;</span>
+
+                <p class="text-xl font-semibold text-brand">Sifatiga gap yo'q</p>
+
+                <p class="text-sm">Birinchi marta ishlatib ko'rgandan keyin, yana qaytaishlatishga qaror qildim, sababi, tizim juda sifatli qilingan.</p>
+
+                <div class="!mt-6 flex items-center space-x-3">
+                  <img src="img/testimonials/people-1.webp" alt="Alisher Uzoqov" class="h-16 w-16 flex-shrink-0 rounded-full border-2 border-white" />
+
+                  <p class="text-sm"><strong class="text-body-dark">Alisher Uzoqov</strong><br />Psiholog, falsafashunos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-4/12 px-3">
+              <div class="relative flex h-full flex-col space-y-3 rounded bg-brand/5 p-8 text-body-light">
+                <span class="absolute -top-0 right-2 text-9xl text-brand/10">&rdquo;</span>
+
+                <p class="text-xl font-semibold text-brand">Ajab, vo ajab!</p>
+
+                <p class="text-sm">Ancha haqiqatga yaqin savollar bor ekan.</p>
+
+                <div class="!mt-6 flex items-center space-x-3">
+                  <img src="img/testimonials/people-2.webp" alt="Janob Rasul" class="h-16 w-16 flex-shrink-0 rounded-full border-2 border-white" />
+
+                  <p class="text-sm"><strong class="text-body-dark">Janob Rasul</strong><br />LOR, tibbiy hodim</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-4/12 px-3">
+              <div class="relative flex h-full flex-col space-y-3 rounded bg-brand/5 p-8 text-body-light">
+                <span class="absolute -top-0 right-2 text-9xl text-brand/10">&rdquo;</span>
+
+                <p class="text-xl font-semibold text-brand">Yahshi narsa qilishibti, gap yo'q</p>
+
+                <p class="text-sm">Tizimni ishlatishdan oldin ancha shubha bor edi, keyin hammasi ravshan bo'ldi.</p>
+
+                <div class="!mt-6 flex items-center space-x-3">
+                  <img src="img/testimonials/people-3.webp" alt="Mr.Chan" class="h-16 w-16 flex-shrink-0 rounded-full border-2 border-white" />
+
+                  <p class="text-sm"><strong class="text-body-dark">Mr.Chan</strong><br />Allergolog</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 flex items-center justify-center space-x-2">
+            <span class="inline-block h-2 w-2 rounded-full bg-brand/10"></span>
+            <span class="inline-block h-2 w-2 rounded-full bg-brand/10"></span>
+            <span class="inline-block h-3 w-3 rounded-full bg-brand"></span>
+            <span class="inline-block h-2 w-2 rounded-full bg-brand/10"></span>
+          </div>
+        </section>
+
+        <section class="container my-20">
+          <div class="-mx-10 flex items-center">
+            <div class="w-4/12 px-10">
+              <div class="max-w-lg space-y-4">
+                <p class="text-xs font-extrabold uppercase tracking-widest text-brand">Bizga qo'shiling</p>
+
+                <h1 class="text-4xl font-extrabold leading-snug tracking-tight">Bizga <span class="text-brand">ishonch</span> bildirgan Hamkorlar</span>!</h1>
+
+                <p class="text-body-light">Biz bilan, bizni tizim bilan hamkorlik olib borayotkan barcha hamkorlarga minnatdorchilik bildiramiz. Tizim sifatini yanada oshirish ustida amaliy tavsiyalaringiz uchun minnatdorchilik bildiramiz.</p>
+
+                <p class="!mt-12">
+                  <a href="#" class="btn py-4 text-base">Bacha hamkorlarni ko'rish</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="w-8/12 px-10">
+              <ul class="flex flex-wrap items-center gap-y-6">
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-1.webp" alt="univer 1" width="68" height="92">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-2.webp" alt="univer 2" width="122" height="70">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-3.webp" alt="univer 3" width="105" height="108">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-4.webp" alt="univer 4" width="78" height="91">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-5.webp" alt="univer 5" width="76" height="91">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-6.webp" alt="univer 6" width="99" height="71">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-7.webp" alt="univer 7" width="93" height="72">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-8.webp" alt="univer 8" width="77" height="72">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-9.webp" alt="univer 9" width="75" height="92">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-10.webp" alt="univer 10" width="87" height="75">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-11.webp" alt="univer 11" width="87" height="78">
+                </li>
+                <li class="w-2/12 flex justify-center">
+                  <img src="img/universities/univer-12.webp" alt="univer 12" width="107" height="69">
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
 

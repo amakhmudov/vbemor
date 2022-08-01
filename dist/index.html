@@ -17,18 +17,89 @@
   <body>
     <div id="container">
       <header id="header" class="shadow-xl shadow-brand/5">
+        <div class="py-4 border-b border-body/10">
+          <div class="container">
+            <div class="flex text-body-light items-center justify-between text-sm font-semibold">
+              <ul class="flex items-center space-x-3">
+                <li>
+                  <a href="tel:998903210892" class="flex items-center space-x-1 text-body-light hover:text-brand hover:underline no-underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand -rotate-90" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span>+998(90) 321-08-92</span>
+                  </a>
+                </li>
+                <li class="relative"><span class="absolute inset-x-0 top-1/2 h-6 -translate-y-1/2 border-l border-body/20"></span></li>
+                <li>
+                  <a href="mailto:info@virtualbemor.com" class="flex items-center space-x-1 text-body-light no-underline hover:text-brand hover:underline no-underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span>info@virtualbemor.com</span>
+                  </a>
+                </li>
+                <li class="relative"><span class="absolute inset-x-0 top-1/2 h-6 -translate-y-1/2 border-l border-body/20"></span></li>
+                <li>
+                  <a href="#" class="text-body-light hover:text-[#4267b2] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-6 h-6 fill-current">
+                      <path d="M15 3C8.373 3 3 8.373 3 15c0 6.016 4.432 10.984 10.206 11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475 1.693-5 4.581-5 1.383 0 2.115.103 2.461.149v2.753h-1.97c-1.226 0-1.654 1.163-1.654 2.473v1.724h3.593l-.487 3.154h-3.106v8.697C22.481 26.083 27 21.075 27 15c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-body-light hover:text-[#c13584] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-6 h-6 fill-current">
+                      <path d="M9.998 3C6.139 3 3 6.142 3 10.002v10C3 23.861 6.142 27 10.002 27h10C23.861 27 27 23.858 27 19.998v-10C27 6.139 23.858 3 19.998 3h-10zM22 7a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-7 2c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6zm0 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-body-light hover:text-[#f00] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-6 h-6 fill-current">
+                      <path d="M15 4c-4.186 0-9.62 1.049-9.62 1.049l-.013.015A3.99 3.99 0 0 0 2 9v12.002a4 4 0 0 0 3.377 3.943l.004.006s5.433 1.051 9.619 1.051 9.62-1.05 9.62-1.05l.001-.003A4 4 0 0 0 28 21.002V9a4 4 0 0 0-3.377-3.945l-.004-.006S19.186 4 15 4zm-3 6.398L20 15l-8 4.602v-9.204z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="flex items-center space-x-3">
+                <li x-data="{isOpen: false}" x-on:keyup.escape="isOpen = false" class="relative">
+                  <button x-on:click="isOpen = true" class="flex items-center space-x-1 outline-none">
+                    <span>O'zbekcha</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  <ul x-cloak x-show="isOpen" x-on:click.outside="isOpen = false" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute top-[calc(100%+0.5rem)] right-0 border border-body/20 w-32 rounded py-2 bg-white z-20">
+                    <!-- <li><a href="#" class="px-3 py-1.5 text-body-light bg-body-light/10 block no-underline">O'zbekcha</a></li> -->
+                    <li><a href="#" class="px-3 py-1.5 text-brand hover:bg-body-light/10 hover:text-body-light block no-underline">Русский</a></li>
+                    <li><a href="#" class="px-3 py-1.5 text-brand hover:bg-body-light/10 hover:text-body-light block no-underline">English</a></li>
+                  </ul>
+                </li>
+                <li class="relative"><span class="absolute inset-x-0 top-1/2 h-6 -translate-y-1/2 border-l border-body/20"></span></li>
+                <li><button class="transition hover:text-brand hover:underline">Kirish</button></li>
+                <li>/</li>
+                <li><button class="transition hover:text-brand hover:underline">Ro'yhatdan o'tish</button></li>
+                <!-- <li><button class="btn">Ro'yhatdan o'tish</button></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="container">
           <div class="flex items-center justify-between py-6">
-            <a href="#" class="flex items-center space-x-px text-2xl no-underline">
+            <a href="#" class="flex items-center space-x-px text-2xl text-body no-underline">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-9 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
               </svg>
-              <strong class="text-body">Virtual</strong>
-              <span class="text-body">Bemor</span>
+              <strong>Virtual</strong>
+              <span>Bemor</span>
             </a>
 
             <nav>
-              <ul class="header__nav">
+              <ul class="menu__nav header__nav">
                 <li><a href="#">Bosh sahifa</a></li>
                 <li><a href="#">Yangliklar</a></li>
                 <li><a href="#">Narxlar</a></li>
@@ -36,7 +107,7 @@
                 <li><a href="#">Demo</a><sup class="badge">New</sup></li>
                 <li><a href="#">Aloqa</a></li>
                 <li><a href="#">Reyting</a></li>
-                <li><a href="#">En / Ru</a></li>
+                <li class="relative"><span class="absolute inset-x-0 top-1/2 h-6 -translate-y-1/2 border-l border-body/20"></span></li>
                 <li>
                   <button class="hover:text-brand">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mt-1.5 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -44,9 +115,6 @@
                     </svg>
                   </button>
                 </li>
-                <li class="relative"><span class="absolute inset-x-0 top-1/2 h-10 -translate-y-1/2 border-l border-body/20"></span></li>
-                <li><button class="whitespace-nowrap transition hover:text-brand hover:underline">Kirish</button></li>
-                <li><button class="btn">Ro'yhatdan o'tish</button></li>
               </ul>
             </nav>
           </div>
@@ -653,7 +721,57 @@
         </section>
       </main>
 
-      <footer id="footer">footer</footer>
+      <footer id="footer">
+        <div class="container">
+          <hr class="mb-10 border-t-body-light/10">
+
+          <div class="flex flex-col items-center space-y-4 pb-10">
+            <a href="#" class="flex items-center space-x-px text-2xl text-body no-underline">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-9 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+              <strong>Virtual</strong>
+              <span>Bemor</span>
+            </a>
+
+            <p class="text-body-light text-sm">&copy;&nbsp;2022 Virtual Bemor. Barcha huquqlar himoyalangan, hizmatlar litcenziyaga ega.</p>
+
+            <ul class="menu__nav footer__nav !my-10">
+              <li><a href="#">Bosh sahifa</a></li>
+              <li><a href="#">Yangiliklar</a></li>
+              <li><a href="#">Narxlar</a></li>
+              <li><a href="#">Yordam</a></li>
+              <li><a href="#">Demo</a><sup class="badge">New</sup></li>
+              <li><a href="#">Aloqa</a></li>
+              <li><a href="#">Reyting</a></li>
+            </ul>
+
+            <ul class="flex items-center space-x-2">
+              <li>
+                <a href="#" class="text-body-light hover:text-[#4267b2] transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-8 h-8 fill-current">
+                    <path d="M15 3C8.373 3 3 8.373 3 15c0 6.016 4.432 10.984 10.206 11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475 1.693-5 4.581-5 1.383 0 2.115.103 2.461.149v2.753h-1.97c-1.226 0-1.654 1.163-1.654 2.473v1.724h3.593l-.487 3.154h-3.106v8.697C22.481 26.083 27 21.075 27 15c0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-body-light hover:text-[#c13584] transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-8 h-8 fill-current">
+                    <path d="M9.998 3C6.139 3 3 6.142 3 10.002v10C3 23.861 6.142 27 10.002 27h10C23.861 27 27 23.858 27 19.998v-10C27 6.139 23.858 3 19.998 3h-10zM22 7a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-7 2c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6zm0 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-body-light hover:text-[#f00] transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-8 h-8 fill-current">
+                    <path d="M15 4c-4.186 0-9.62 1.049-9.62 1.049l-.013.015A3.99 3.99 0 0 0 2 9v12.002a4 4 0 0 0 3.377 3.943l.004.006s5.433 1.051 9.619 1.051 9.62-1.05 9.62-1.05l.001-.003A4 4 0 0 0 28 21.002V9a4 4 0 0 0-3.377-3.945l-.004-.006S19.186 4 15 4zm-3 6.398L20 15l-8 4.602v-9.204z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

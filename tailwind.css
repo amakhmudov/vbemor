@@ -64,11 +64,11 @@ html {
     @apply relative after:absolute after:bottom-1 after:left-2 after:z-0 after:inline-block after:h-2 after:w-full after:rotate-1 after:-skew-x-6 after:bg-brand/20 after:content-[''];
   }
 
-  .header__nav {
+  .menu__nav {
     @apply flex items-center space-x-4 text-sm font-semibold;
   }
 
-  .header__nav a {
+  .menu__nav a {
     @apply whitespace-nowrap text-body-dark no-underline hover:text-brand hover:underline;
   }
 

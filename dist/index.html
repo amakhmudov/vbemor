@@ -19,7 +19,7 @@
       <header id="header" class="shadow-xl shadow-brand/5">
         <div class="py-4 border-b border-body/10">
           <div class="container">
-            <div x-data="{loginRegisterTab: 'isLogin', loginRegisterOpen: true}" class="flex text-body items-center justify-between text-sm">
+            <div x-data="{loginRegisterTab: '', loginRegisterOpen: false}" class="flex text-body items-center justify-between text-sm">
               <ul class="flex items-center space-x-3">
                 <li>
                   <a href="tel:998903210892" class="flex items-center space-x-1 text-body-light hover:text-brand hover:underline no-underline">
@@ -99,11 +99,11 @@
                       <p class="text-xl text-body font-semibold text-center">Tizimga kirish</p>
 
                       <div class="space-y-3">
-                        <input type="text" name="sign-in-name" id="sign-in-name" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded" placeholder="Foydalanuvchi ismi">
+                        <input type="text" name="sign-in-name" id="sign-in-name" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Foydalanuvchi ismi">
 
-                        <input type="password" name="sign-in-password" id="sign-in-password" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded" placeholder="Parol">
+                        <input type="password" name="sign-in-password" id="sign-in-password" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Parol">
 
-                        <p class="text-red-500">Hatolik yuz berdi, iltimos ma'lumotlarni qaytadan tekshirib to'ldiring...</p>
+                        <p class="text-red-500 px-3">Hatolik yuz berdi, iltimos ma'lumotlarni qaytadan tekshirib to'ldiring...</p>
 
                         <button class="btn w-full flex items-center justify-center space-x-2">
                           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 rotate-180 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,7 +114,7 @@
                       </div>
 
                       <p class="flex items-center justify-center divide-x divide-body/20">
-                        <a href="#" class="px-3 text-center">Parolni unutdingizmi?</a>
+                        <button x-on:click="loginRegisterTab = 'isForgot'" class="px-3 text-center text-brand underline hover:no-underline">Parolni unutdingizmi?</button>
                         <button x-on:click="loginRegisterTab = 'isRegister'" class="px-3 text-center text-brand underline hover:no-underline">Ro'yhatdan o'ting!</button>
                       </p>
 
@@ -147,22 +147,55 @@
                     </div>
                   </div>
 
+                  <div x-cloak x-show="loginRegisterTab === 'isForgot'">
+                    <div class="space-y-6">
+                      <p class="text-xl text-body font-semibold text-center">Parolni tiklash</p>
+
+                      <div class="space-y-3">
+                        <input type="text" name="reset-password-email" id="reset-password-email" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Email manzilingizni kiriting">
+
+                        <p class="px-3 text-body-light">Email manzilga parolni tiklash uchun havola jo'natamiz. Shu havola bo'yicha o'tib, yangi parolni o'rnatishingiz mumkin bo'ladi.</p>
+                      </div>
+
+                      <button class="btn w-full flex items-center justify-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        </svg>
+                        <span>Parolni tiklash</span>
+                      </button>
+                    </div>
+                  </div>
+
                   <div x-cloak x-show="loginRegisterTab === 'isRegister'">
                     <div class="space-y-6">
                       <p class="text-xl text-body font-semibold text-center">Ro'yhattan o'tish</p>
 
                       <div class="space-y-3">
-                        <input type="text" name="register-name" id="register-name" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded" placeholder="Ismingiz *">
+                        <input type="text" name="register-name" id="register-name" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Ismingiz *">
 
-                        <input type="text" name="register-last-name" id="register-last-name" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded" placeholder="Familiyangiz *">
+                        <input type="text" name="register-last-name" id="register-last-name" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Familiyangiz *">
 
-                        <input type="text" name="register-username" id="register-username" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded" placeholder="Foydalanuvchi nomi *">
+                        <input type="text" name="register-username" id="register-username" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Foydalanuvchi nomi *">
 
-                        <input type="text" name="register-email" id="register-email" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded" placeholder="Email *">
+                        <input type="text" name="register-email" id="register-email" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Email *">
 
-                        <input type="password" name="register-password" id="register-password" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded" placeholder="Parol">
+                        <input type="text" name="register-phone" id="register-phone" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="+998(90) 321-08-92">
 
-                        <input type="password" name="register-password-repeat" id="register-password-repeat" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded" placeholder="Parolni takrorlang">
+                        <div class="c-select relative">
+                          <select name="register-country" id="register-country" class="block appearance-none w-full px-3 py-2.5 bg-white border border-body/20 rounded text-body">
+                            <option selected disabled class="">Davlatni tanlang</option>
+                            <option value="uzbekistan">Uzbekistan</option>
+                            <option value="russia">Russia</option>
+                          </select>
+
+                          <svg width="12" height="8" class="absolute pointer-events-none top-1/2 -translate-y-1/2 right-3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.119 1.29l3.88 3.88 3.88-3.88a.996.996 0 111.41 1.41l-4.59 4.59a.996.996 0 01-1.41 0L.699 2.7a.996.996 0 010-1.41c.39-.38 1.03-.39 1.42 0z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+
+                        <input type="password" name="register-password" id="register-password" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Parol">
+
+                        <input type="password" name="register-password-repeat" id="register-password-repeat" class="w-full px-3 py-2.5 bg-white border border-body/20 rounded placeholder:text-body" placeholder="Parolni takrorlang">
 
                         <label for="register-agree" class="c-checkbox body-text items-start cursor-pointer">
                           <input type="checkbox" name="register-agree" id="register-agree">
@@ -175,41 +208,18 @@
                           </span>
                           <span class="c-checkbox__title">Ro'yhattan o'tish tugmasini bosish orqali, men <a href="#" class="text-blue-500 underline hover:no-underline">foydalanish shartlarini</a> tasdiqlayman.</span>
                         </label>
-
-                        <button class="btn w-full flex items-center justify-center space-x-2">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
-                          </svg>
-                          <span>Ro'yhattan o'tish</span>
-                        </button>
                       </div>
+
+                      <button class="btn w-full flex items-center justify-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                        </svg>
+                        <span>Ro'yhattan o'tish</span>
+                      </button>
 
                       <div class="relative before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:w-full before:h-px before:bg-body/20 text-center text-body-light"><span class="bg-white px-2 relative">yoki</span></div>
 
-                      <div class="space-y-2">
-                        <button class="w-full flex items-center space-x-5 p-1.5 shadow-lg rounded bg-[#DB4437] hover:opacity-75 transition duration-300">
-                          <span class="bg-white rounded p-1 flex-shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="w-8 h-8">
-                              <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/>
-                              <path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/>
-                              <path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/>
-                              <path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/>
-                            </svg>
-                          </span>
-
-                          <span class="text-white font-semibold">Google orqali kiring</span>
-                        </button>
-
-                        <button class="w-full flex items-center space-x-5 p-1.5 shadow-lg rounded bg-[#4267b2] hover:opacity-75 transition duration-300">
-                          <span class="bg-white rounded p-1 flex-shrink-0 text-[#4267b2]">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="w-8 h-8">
-                              <path fill="currentColor" d="M29 3c-5.523 0-10 4.477-10 10v5h-6v8h6v19h8V26h7l1-8h-8v-4a4 4 0 0 1 4-4h4V3.322A59.806 59.806 0 0 0 29 3z"/>
-                            </svg>
-                          </span>
-
-                          <span class="text-white font-semibold">Facebook orqali kiring</span>
-                        </button>
-                      </div>
+                      <p>Men avval ro'yhattan o'tkanman, <button x-on:click="loginRegisterTab = 'isLogin'" class="text-center text-brand underline hover:no-underline">tizimga kirishni</button> istayman</p>
                     </div>
                   </div>
                 </div>

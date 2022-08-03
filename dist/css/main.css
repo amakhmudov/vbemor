@@ -849,6 +849,11 @@ a:hover {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.c-select:checked {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
 .category-header {
   margin-bottom: 2.5rem;
   font-size: 2.25rem;
@@ -923,6 +928,10 @@ a:hover {
   transition-duration: 500ms;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .fixed {
   position: fixed;
 }
@@ -965,6 +974,10 @@ a:hover {
 
 .top-1 {
   top: 0.25rem;
+}
+
+.right-3 {
+  right: 0.75rem;
 }
 
 .top-10 {
@@ -1280,6 +1293,12 @@ a:hover {
   cursor: pointer;
 }
 
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1573,10 +1592,6 @@ a:hover {
   text-align: center;
 }
 
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1642,10 +1657,6 @@ a:hover {
   text-transform: uppercase;
 }
 
-.italic {
-  font-style: italic;
-}
-
 .leading-snug {
   line-height: 1.375;
 }
@@ -1673,6 +1684,11 @@ a:hover {
   color: rgb(0 113 220 / var(--tw-text-opacity));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1695,11 +1711,6 @@ a:hover {
 
 .text-brand\/10 {
   color: rgb(0 113 220 / 0.1);
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1831,6 +1842,51 @@ html {
   flex-shrink: 0;
 }
 
+.placeholder\:text-body-light::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(122 122 122 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-body-light:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(122 122 122 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-body-light::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(122 122 122 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-500::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-500:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-500::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-body::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-body:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-body::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -1870,6 +1926,11 @@ html {
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.focus-within\:text-body:focus-within {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .hover\:bg-brand\/10:hover {
@@ -1918,6 +1979,16 @@ html {
 
 .hover\:opacity-75:hover {
   opacity: 0.75;
+}
+
+.focus\:text-red-500:focus {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.focus\:text-body:focus {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:rotate-1 {

@@ -126,6 +126,10 @@ html {
     @apply inline-block rounded border border-body/20 bg-transparent py-3 px-6 text-sm font-semibold text-body-light no-underline shadow-lg shadow-body-light/10 transition hover:border-brand/10 hover:bg-brand/10 hover:text-brand hover:shadow-lg hover:shadow-brand/10;
   }
 
+  .c-select:checked {
+    @apply text-body;
+  }
+
   .category-header {
     @apply mb-10 text-4xl font-extrabold leading-snug tracking-tight;
   }

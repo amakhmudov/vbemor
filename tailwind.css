@@ -49,11 +49,11 @@ html {
   }
 
   .btn {
-    @apply inline-block rounded border border-brand/10 bg-brand/10 py-3 px-6 text-sm font-semibold text-brand no-underline transition hover:border-brand hover:bg-brand hover:text-white;
+    @apply inline-block rounded border border-brand/10 bg-brand/10 py-3 px-6 text-sm font-semibold text-brand no-underline shadow-lg shadow-brand/10 transition hover:border-brand hover:bg-brand hover:text-white hover:shadow-xl hover:shadow-brand/30;
   }
 
   .btn-s {
-    @apply inline-block rounded border border-body/20 bg-transparent py-3 px-6 text-sm font-semibold text-body-light no-underline transition hover:border-brand/10 hover:bg-brand/10 hover:text-brand;
+    @apply inline-block rounded border border-body/20 bg-transparent py-3 px-6 text-sm font-semibold text-body-light no-underline shadow-lg shadow-body-light/10 transition hover:border-brand/10 hover:bg-brand/10 hover:text-brand hover:shadow-xl hover:shadow-brand/10;
   }
 
   .category-header {

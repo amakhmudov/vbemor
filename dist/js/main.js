@@ -1,45 +1,26 @@
-// const firstSwiper = new Swiper(".first-swiper", {
-//   speed: 900,
-//   grabCursor: true,
-//   autoHeight: true,
-//   mousewheel: true,
-//   keyboard: true,
-//   spaceBetween: 24,
+const slideSwiper = new Swiper(".testimonials-swiper", {
+  speed: 900,
+  grabCursor: true,
+  // autoHeight: true,
+  mousewheel: true,
+  keyboard: true,
+  slidesPerView: 1,
+  spaceBetween: 24,
+  // centeredSlides: true,
 
-//   pagination: {
-//     el: ".first-swiper-pagination",
-//     clickable: true,
-//   },
+  pagination: {
+    el: ".testimonials-swiper-pagination",
+    clickable: true,
+  },
 
-//   breakpoints: {
-//     640: {
-//       spaceBetween: 96,
-//     },
-//   },
-// });
-
-// const slideSwiper = new Swiper(".slide-swiper", {
-//   speed: 900,
-//   grabCursor: true,
-//   autoHeight: true,
-//   mousewheel: true,
-//   keyboard: true,
-//   slidesPerView: 1,
-//   spaceBetween: 40,
-//   centeredSlides: true,
-
-//   pagination: {
-//     el: ".slide-swiper-pagination",
-//     clickable: true,
-//   },
-
-//   breakpoints: {
-//     480: {
-//       slidesPerView: 2,
-//     },
-
-//     640: {
-//       slidesPerView: 3,
-//     },
-//   },
-// });
+  breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});

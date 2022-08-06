@@ -42,6 +42,7 @@ module.exports = {
       },
       boxShadow: {
         icon: "0 -1px 0 rgb(102 102 102 / 0.2)",
+        opposite: "0 -20px 25px -5px var(--tw-shadow-color)",
       },
     },
   },

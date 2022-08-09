@@ -154,6 +154,22 @@ html {
     @apply whitespace-nowrap text-body-dark no-underline hover:text-brand hover:underline;
   }
 
+  .header__nav li > a.is_active {
+    @apply text-brand underline;
+  }
+
+  .breadcrumbs {
+    @apply flex flex-wrap items-center space-x-1 text-sm;
+  }
+
+  .breadcrumbs a {
+    @apply font-medium text-brand hover:no-underline;
+  }
+
+  .breadcrumbs li:not(:first-child) {
+    @apply before:mx-2 before:content-['/'];
+  }
+
   .footer__nav {
     @apply flex-wrap justify-center;
   }
@@ -168,6 +184,18 @@ html {
 
   .news__media img {
     @apply transition duration-500 will-change-transform;
+  }
+
+  .pagination {
+    @apply flex items-center justify-center;
+  }
+
+  .pagination a {
+    @apply mx-1 inline-flex h-10 w-10 items-center justify-center rounded p-2 no-underline;
+  }
+
+  .pagination a.is_active {
+    @apply bg-brand text-white;
   }
 }
 

@@ -34,6 +34,7 @@ module.exports = {
           DEFAULT: "#333",
           dark: "#000000",
           light: "#7a7a7a",
+          warning: "#b3813b",
         },
         star: "#f7c04d",
       },

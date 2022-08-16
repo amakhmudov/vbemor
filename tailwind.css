@@ -126,6 +126,22 @@ html {
     @apply inline-block rounded border border-body/20 bg-transparent py-3 px-6 text-sm font-semibold text-body-light no-underline shadow-lg shadow-body-light/10 transition hover:border-brand/10 hover:bg-brand/10 hover:text-brand hover:shadow-lg hover:shadow-brand/10;
   }
 
+  .table-striped {
+    @apply w-full table-auto text-sm font-normal;
+  }
+
+  .table-striped tr:not(:first-child) {
+    @apply border-t border-body/10;
+  }
+
+  .table-striped td {
+    @apply py-3;
+  }
+
+  .table-striped td:last-child {
+    @apply text-right;
+  }
+
   .c-select:checked {
     @apply text-body;
   }

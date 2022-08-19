@@ -1193,9 +1193,9 @@ a:hover {
   margin-right: -0.5rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .\!my-8 {
@@ -1208,9 +1208,9 @@ a:hover {
   margin-right: -0.75rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .-mx-1 {
@@ -1243,16 +1243,16 @@ a:hover {
   margin-left: auto !important;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .\!mt-2 {
   margin-top: 0.5rem !important;
 }
 
 .mt-0 {
   margin-top: 0px;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-0 {
@@ -1331,20 +1331,16 @@ a:hover {
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-4 {
   height: 1rem;
 }
 
 .h-14 {
   height: 3.5rem;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-36 {
-  height: 9rem;
 }
 
 .max-h-52 {
@@ -1415,16 +1411,16 @@ a:hover {
   max-width: 24rem;
 }
 
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
 
 .max-w-\[115px\] {
   max-width: 115px;
-}
-
-.max-w-\[100px\] {
-  max-width: 100px;
 }
 
 .flex-shrink-0 {
@@ -1643,16 +1639,22 @@ a:hover {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .divide-x > :not([hidden]) ~ :not([hidden]) {
@@ -2293,6 +2295,16 @@ html {
   top: 0px;
 }
 
+.before\:-top-20::before {
+  content: var(--tw-content);
+  top: -5rem;
+}
+
+.before\:-top-10::before {
+  content: var(--tw-content);
+  top: -2.5rem;
+}
+
 .before\:z-20::before {
   content: var(--tw-content);
   z-index: 20;
@@ -2301,6 +2313,11 @@ html {
 .before\:z-0::before {
   content: var(--tw-content);
   z-index: 0;
+}
+
+.before\:hidden::before {
+  content: var(--tw-content);
+  display: none;
 }
 
 .before\:h-px::before {
@@ -2316,6 +2333,16 @@ html {
 .before\:h-20::before {
   content: var(--tw-content);
   height: 5rem;
+}
+
+.before\:h-10::before {
+  content: var(--tw-content);
+  height: 2.5rem;
+}
+
+.before\:h-5::before {
+  content: var(--tw-content);
+  height: 1.25rem;
 }
 
 .before\:w-full::before {

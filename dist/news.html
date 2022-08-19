@@ -306,7 +306,9 @@
 
           <div class="-mx-4 flex flex-wrap">
             <div class="w-full px-4 lg:w-9/12">
-              <div class="news -mx-3 flex flex-wrap gap-y-8">
+              <section class="news -mx-3 flex flex-wrap gap-y-8">
+                <h1 class="sr-only">Yangiliklar</h1>
+
                 <div class="news__item group w-full px-3 sm:w-6/12">
                   <div class="rounded shadow transition duration-300 will-change-transform group-hover:translate-y-1 group-hover:shadow-2xl">
                     <p class="news__media rounded-b-none"><img src="img/news/news-item-1.webp" alt="news item 1" class="max-h-52 w-full object-cover group-hover:rotate-1 group-hover:scale-105" /></p>
@@ -330,7 +332,7 @@
 
                       <hr class="border-t" />
 
-                      <p class="text-lg font-bold text-body-dark line-clamp-2">Maktabga qaytish, yangi bilimlarni egallash vaqti keldi. Yangi uchrashuvlar, do'stlik, qiyinchiliklar hammasi endi yangi uslubda, yangi ko'rinishda...</p>
+                      <h2 class="text-lg font-bold text-body-dark line-clamp-2">Maktabga qaytish, yangi bilimlarni egallash vaqti keldi. Yangi uchrashuvlar, do'stlik, qiyinchiliklar hammasi endi yangi uslubda, yangi ko'rinishda...</h2>
 
                       <p class="text-sm line-clamp-2">Boshlang'ich sinf o'quvchilarimiz shaxsan maktabga qaytishayotganda, yangi uchrashuvlar hamda qiyinchiliklar oldida dovdirab qolishadi</p>
 
@@ -362,7 +364,7 @@
 
                       <hr class="border-t" />
 
-                      <p class="text-lg font-bold text-body-dark line-clamp-2">Talabalar uchun ichki motivaciyaning ahamiyati va dolzarbligini bugungi kundagi barcha</p>
+                      <h2 class="text-lg font-bold text-body-dark line-clamp-2">Talabalar uchun ichki motivaciyaning ahamiyati va dolzarbligini bugungi kundagi barcha</h2>
 
                       <p class="text-sm line-clamp-2">Institut talabalari ko'p hollar mantrani chaqirishadi: "Men hammadan yahshiman, aqlliman" - deb o'zlariga tasalli berishga urunadilar va shundan ichki hotirjamlik topadilar</p>
 
@@ -394,7 +396,7 @@
 
                       <hr class="border-t" />
 
-                      <p class="text-lg font-bold text-body-dark line-clamp-2">Qo'lda ruchka yordamida, yoki laptop bilan yozishmalarni qayd etib borish haqida boshqacha fikr yuritish vaqti keldi</p>
+                      <h2 class="text-lg font-bold text-body-dark line-clamp-2">Qo'lda ruchka yordamida, yoki laptop bilan yozishmalarni qayd etib borish haqida boshqacha fikr yuritish vaqti keldi</h2>
 
                       <p class="text-sm line-clamp-2">Barchamiz uchun odatga aylangan telefon yoki laptop yordamida yozishmalarni qayd etib borish qanchalik oson va vaqt tejashi mumkin?</p>
 
@@ -426,7 +428,7 @@
 
                       <hr class="border-t" />
 
-                      <p class="text-lg font-bold text-body-dark line-clamp-2">Boshlang'ich ta'lim uchun endi hujjatlarni an'anaviy ravishda emas, online topshirish mumkin bo'ladi</p>
+                      <h2 class="text-lg font-bold text-body-dark line-clamp-2">Boshlang'ich ta'lim uchun endi hujjatlarni an'anaviy ravishda emas, online topshirish mumkin bo'ladi</h2>
 
                       <p class="text-sm line-clamp-2">Ota-onalar uchun va bolajonlar uchun endlikda sarson bo'lib maktabga borib hujjat topshirish emas, online ravishda amallash imkoniyati mavjud bo'ladi</p>
 
@@ -458,7 +460,7 @@
 
                       <hr class="border-t" />
 
-                      <p class="text-lg font-bold text-body-dark line-clamp-2">Talabalar uchun ichki motivaciyaning ahamiyati va dolzarbligini bugungi kundagi barcha</p>
+                      <h2 class="text-lg font-bold text-body-dark line-clamp-2">Talabalar uchun ichki motivaciyaning ahamiyati va dolzarbligini bugungi kundagi barcha</h2>
 
                       <p class="text-sm line-clamp-2">Institut talabalari ko'p hollar mantrani chaqirishadi: "Men hammadan yahshiman, aqlliman" - deb o'zlariga tasalli berishga urunadilar va shundan ichki hotirjamlik topadilar</p>
 
@@ -490,7 +492,7 @@
 
                       <hr class="border-t" />
 
-                      <p class="text-lg font-bold text-body-dark line-clamp-2">Maktabga qaytish, yangi bilimlarni egallash vaqti keldi. Yangi uchrashuvlar, do'stlik, qiyinchiliklar hammasi endi yangi uslubda, yangi ko'rinishda...</p>
+                      <h2 class="text-lg font-bold text-body-dark line-clamp-2">Maktabga qaytish, yangi bilimlarni egallash vaqti keldi. Yangi uchrashuvlar, do'stlik, qiyinchiliklar hammasi endi yangi uslubda, yangi ko'rinishda...</h2>
 
                       <p class="text-sm line-clamp-2">Boshlang'ich sinf o'quvchilarimiz shaxsan maktabga qaytishayotganda, yangi uchrashuvlar hamda qiyinchiliklar oldida dovdirab qolishadi</p>
 
@@ -498,11 +500,11 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
 
               <ul class="pagination my-10">
                 <li class="hidden">
-                  <a href="#">
+                  <a href="#" aria-label="eng avvaliga o'tish">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
                     </svg>
@@ -512,7 +514,7 @@
                 <li><a href="#">2</a></li>
                 <li><a href="#">...</a></li>
                 <li>
-                  <a href="#">
+                  <a href="#" aria-label="eng ohiriga o'tish">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
                     </svg>
@@ -528,7 +530,7 @@
                 <form class="sidebar-search relative">
                   <input type="text" name="sidebar-search__input" id="sidebar-search__input" class="w-full rounded border border-body/20 bg-white px-3 py-2.5 pr-12 text-sm placeholder:text-body" placeholder="Qidiruv" />
 
-                  <button id="sidebar-search__submit" class="absolute inset-y-0 right-0 px-3 hover:text-brand">
+                  <button id="sidebar-search__submit" class="absolute inset-y-0 right-0 px-3 hover:text-brand" aria-label="yangilikni izlang">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>

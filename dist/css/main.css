@@ -1157,6 +1157,18 @@ a:hover {
   right: 0.5rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -1651,12 +1663,6 @@ a:hover {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
 .divide-x > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -1879,11 +1885,6 @@ a:hover {
   padding-bottom: 0.75rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .pr-12 {
   padding-right: 3rem;
 }
@@ -1902,6 +1903,10 @@ a:hover {
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .text-center {
@@ -2295,29 +2300,9 @@ html {
   top: 0px;
 }
 
-.before\:-top-20::before {
-  content: var(--tw-content);
-  top: -5rem;
-}
-
-.before\:-top-10::before {
-  content: var(--tw-content);
-  top: -2.5rem;
-}
-
 .before\:z-20::before {
   content: var(--tw-content);
   z-index: 20;
-}
-
-.before\:z-0::before {
-  content: var(--tw-content);
-  z-index: 0;
-}
-
-.before\:hidden::before {
-  content: var(--tw-content);
-  display: none;
 }
 
 .before\:h-px::before {
@@ -2328,21 +2313,6 @@ html {
 .before\:h-screen::before {
   content: var(--tw-content);
   height: 100vh;
-}
-
-.before\:h-20::before {
-  content: var(--tw-content);
-  height: 5rem;
-}
-
-.before\:h-10::before {
-  content: var(--tw-content);
-  height: 2.5rem;
-}
-
-.before\:h-5::before {
-  content: var(--tw-content);
-  height: 1.25rem;
 }
 
 .before\:w-full::before {
@@ -2369,18 +2339,6 @@ html {
 .before\:bg-body-dark\/80::before {
   content: var(--tw-content);
   background-color: rgb(0 0 0 / 0.8);
-}
-
-.before\:bg-gradient-to-b::before {
-  content: var(--tw-content);
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.before\:from-white::before {
-  content: var(--tw-content);
-  --tw-gradient-from: #fff;
-  --tw-gradient-to: rgb(255 255 255 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .before\:opacity-0::before {

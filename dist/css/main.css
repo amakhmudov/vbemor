@@ -1149,24 +1149,20 @@ a:hover {
   left: -4rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
 .-top-0 {
   top: -0px;
 }
 
 .right-2 {
   right: 0.5rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-4 {
-  top: 1rem;
 }
 
 .z-20 {
@@ -1259,6 +1255,10 @@ a:hover {
   margin-bottom: 2.5rem;
 }
 
+.\!ml-0 {
+  margin-left: 0px !important;
+}
+
 .\!mt-2 {
   margin-top: 0.5rem !important;
 }
@@ -1285,6 +1285,30 @@ a:hover {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.\!mt-4 {
+  margin-top: 1rem !important;
+}
+
+.\!mt-8 {
+  margin-top: 2rem !important;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -1669,8 +1693,23 @@ a:hover {
   border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
 .divide-body\/20 > :not([hidden]) ~ :not([hidden]) {
   border-color: rgb(51 51 51 / 0.2);
+}
+
+.divide-body\/10 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(51 51 51 / 0.1);
+}
+
+.divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-divide-opacity));
 }
 
 .overflow-hidden {
@@ -1750,6 +1789,10 @@ a:hover {
 
 .border-t-body-light\/10 {
   border-top-color: rgb(122 122 122 / 0.1);
+}
+
+.border-t-body\/10 {
+  border-top-color: rgb(51 51 51 / 0.1);
 }
 
 .bg-white {
@@ -1893,6 +1936,10 @@ a:hover {
   padding-top: 1rem;
 }
 
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1903,10 +1950,6 @@ a:hover {
 
 .pb-1 {
   padding-bottom: 0.25rem;
-}
-
-.pl-7 {
-  padding-left: 1.75rem;
 }
 
 .text-center {
@@ -2058,6 +2101,11 @@ a:hover {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
 .text-body\/20 {
   color: rgb(51 51 51 / 0.2);
 }
@@ -2130,6 +2178,11 @@ a:hover {
 
 .drop-shadow-2xl {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

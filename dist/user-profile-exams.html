@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Virtual Bemor platformasi" />
-    <title>Virtual Bemor | Kursni or'ganish</title>
+    <title>Virtual Bemor | User profile, topshirilgan imtihonlar</title>
     <!-- <link rel="icon" href="./favicon.svg" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -301,308 +301,172 @@
         <div class="container">
           <ul class="breadcrumbs my-8">
             <li><a href="#">Bosh sahifa</a></li>
-            <li><a href="#">Kurslar</a></li>
-            <li><span>Qandli diabetni aniqlash, zamonaviy uslub</span></li>
+            <li><span>User profile</span></li>
           </ul>
         </div>
 
         <section class="my-20">
           <div class="container">
+            <p class="mb-4 text-xl font-extrabold leading-snug tracking-tight">Alisher Makhmudov <span class="text-base text-brand">ID 2012</span></p>
+
             <div class="relative -mx-4 flex flex-wrap lg-down:space-y-4">
               <div class="w-full space-y-4 px-4 lg:w-4/12">
-                <div class="space-y-4 rounded text-sm tracking-wide">
-                  <div x-data="{isOpen: true}" class="rounded bg-white shadow">
-                    <button x-on:click="isOpen = ! isOpen" class="flex w-full items-center space-x-2 p-4 text-base font-bold text-brand">
-                      <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isOpen && 'rotate-[135deg]'" class="h-6 w-6 flex-shrink-0 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                <ul class="rounded bg-white p-2 text-sm tracking-wide shadow">
+                  <li>
+                    <a href="#" class="flex w-full items-center space-x-3 rounded bg-white p-4 font-semibold text-body no-underline transition duration-300 hover:bg-brand/5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
 
-                      <span>Kirish</span>
-                    </button>
+                      <span>Shaxsiy ma'lumotlar</span>
+                    </a>
+                  </li>
 
-                    <div x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-300 origin-top" x-transition:enter-start="opacity-0 scale-y-90" x-transition:enter-end="opacity-100 scale-y-100">
-                      <ul class="divide-y divide-body/10 rounded">
-                        <li x-data="{isComplete: true}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition transition hover:text-body hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span>Endokrinologiya nima?</span>
-                          </a>
-                        </li>
-
-                        <li x-data="{isComplete: true}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition transition hover:text-body hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span class="font-semibold">Endokrinologiya yo'nalishining hozirgi kundagi o'rni</span>
-                          </a>
-                        </li>
-
-                        <li x-data="{isComplete: false}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span>Nima uchun bu sohani o'rganish kerak?</span>
-                          </a>
-                        </li>
-
-                        <li x-data="{isComplete: false}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span>Topshiriqlar</span>
-                          </a>
-                        </li>
-
-                        <li x-data="{isComplete: false}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span>Savol javoblar</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div x-data="{isOpen: false}" class="rounded bg-white shadow">
-                    <button x-on:click="isOpen = ! isOpen" class="flex w-full items-center space-x-2 p-4 text-base font-bold text-brand">
-                      <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isOpen && 'rotate-[135deg]'" class="h-6 w-6 flex-shrink-0 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                  <li>
+                    <a href="#" class="flex w-full items-center space-x-3 rounded bg-white p-4 font-semibold text-body no-underline transition duration-300 hover:bg-brand/5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                       </svg>
 
-                      <span>Asosiy tushunchalar</span>
-                    </button>
+                      <span>Sotib olgan kurslarim</span>
+                    </a>
+                  </li>
 
-                    <div x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-300 origin-top" x-transition:enter-start="opacity-0 scale-y-90" x-transition:enter-end="opacity-100 scale-y-100">
-                      <ul class="divide-y divide-body/10 rounded">
-                        <li x-data="{isComplete: false}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition transition hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span>Umumiy tushunchalar va nazariy bilimlar</span>
-                          </a>
-                        </li>
-
-                        <li x-data="{isComplete: false}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span>Topshiriq #2</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div x-data="{isOpen: false}" class="rounded bg-white shadow">
-                    <button x-on:click="isOpen = ! isOpen" class="flex w-full items-center space-x-2 p-4 text-base font-bold text-brand">
-                      <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isOpen && 'rotate-[135deg]'" class="h-6 w-6 flex-shrink-0 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                  <li>
+                    <a href="#" class="flex w-full items-center space-x-3 rounded bg-brand p-4 font-semibold text-white no-underline transition duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                       </svg>
 
-                      <span>Fanni hayotga qo'llash</span>
+                      <span>Topshirilgan imtihonlar</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-full space-y-4 px-4 lg:w-8/12">
+                <div class="flex items-center justify-between">
+                  <h2 class="text-xl font-semibold">Topshirilgan imtihonlar</h2>
+
+                  <div x-data="{isOpen: false}" class="relative hidden">
+                    <button x-on:click="isOpen = true" x-on:keydown.escape="isOpen = false" class="flex h-9 w-9 items-center justify-center space-x-2 rounded bg-white text-body-light shadow focus:outline-none" aria-label="options toggle button">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+                      </svg>
                     </button>
 
-                    <div x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-300 origin-top" x-transition:enter-start="opacity-0 scale-y-90" x-transition:enter-end="opacity-100 scale-y-100">
-                      <ul class="divide-y divide-body/10 rounded">
-                        <li x-data="{isComplete: false}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition transition hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    <div x-show="isOpen" x-on:click.away="isOpen = false" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="dropdown absolute top-full right-0 z-10 w-52 translate-y-2 transform rounded bg-white py-2 shadow">
+                      <ul class="divide-y divide-body/10 text-sm">
+                        <li>
+                          <a href="#" class="flex items-center space-x-3 whitespace-nowrap bg-white px-4 py-3 no-underline transition duration-300 hover:bg-brand/5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
                             </svg>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span>Yakuniy tushunchalar</span>
+                            <span>Tahrirlash</span>
                           </a>
                         </li>
 
-                        <li x-data="{isComplete: false}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        <li>
+                          <a href="#" class="flex items-center space-x-3 whitespace-nowrap bg-white px-4 py-3 no-underline transition duration-300 hover:bg-brand/5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path>
                             </svg>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                            </svg>
-
-                            <span>Yakuniy topshiriqlar</span>
+                            <span>Yashirish</span>
                           </a>
                         </li>
 
-                        <li x-data="{isComplete: false}">
-                          <a href="#" class="flex items-center space-x-2 p-4 text-body-light no-underline transition hover:text-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="isComplete && 'hidden'" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <li>
+                          <a href="#" class="flex items-center space-x-3 whitespace-nowrap bg-white px-4 py-3 no-underline transition duration-300 hover:bg-brand/5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
                             </svg>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" x-bind:class="! isComplete && 'hidden'" class="!ml-0 h-5 w-5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            <span>Ulashish</span>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#" class="flex items-center space-x-3 whitespace-nowrap bg-white px-4 py-3 no-underline transition duration-300 hover:bg-brand/5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path>
                             </svg>
 
-                            <span>Yakuniy savol javoblar</span>
+                            <span>Nusha olish</span>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#" class="flex items-center space-x-3 whitespace-nowrap bg-white px-4 py-3 text-red-600 no-underline transition duration-300 hover:bg-red-600 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+
+                            <span>O'chirish</span>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="w-full px-4 lg:w-8/12">
                 <div class="space-y-4 rounded bg-white p-6 text-sm tracking-wide shadow">
-                  <div class="relative">
-                    <img src="img/courses/diabet.jpeg" alt="diabet poster" class="aspect-video rounded object-cover" />
+                  <table class="table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-left">ID</th>
+                        <th class="text-left">Fan nomi</th>
+                        <th class="text-left">Sana</th>
+                        <th class="text-left">Narhi</th>
+                        <th class="text-left">Holati</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="odd:bg-body-light/5">
+                        <td>#1506</td>
+                        <td>Kasallik varaqalarini endi jurnalda yozishga hojat yo'q, uning o'rniga osongina komputerda qayd etish.</td>
+                        <td>15.02.2022</td>
+                        <td>Tekin</td>
+                        <td><span class="font-bold text-green-600">Topshirildi</span></td>
+                      </tr>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="absolute top-1/2 left-1/2 h-20 w-20 -translate-x-1/2 -translate-y-1/2">
-                      <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path>
-                      <path fill="#fff" d="M20 31L20 17 32 24z"></path>
-                    </svg>
-                  </div>
+                      <tr class="odd:bg-body-light/5">
+                        <td>#2207</td>
+                        <td>Umumiy qon analizlarini behato va tez tekshirish, zamonaviy va behato aniqlash uskunalari..</td>
+                        <td>18.03.2022</td>
+                        <td>$38.00</td>
+                        <td><span class="font-bold text-red-600">Qoniqarsiz</span></td>
+                      </tr>
 
-                  <div class="space-y-4">
-                    <h2 class="!mt-8 text-xl font-semibold">Endokrinologiya yo'nalishining hozirgi kundagi o'rni</h2>
+                      <tr class="odd:bg-body-light/5">
+                        <td>#1801</td>
+                        <td>Qandli diabetni o'lchashdagi an'anaviya va zamonaviy uslublari haqida..</td>
+                        <td>05.05.2022</td>
+                        <td>$42.00</td>
+                        <td><span class="font-bold text-green-600">Topshirildi</span></td>
+                      </tr>
 
-                    <p>Ushbu kursda siz quyidagilarni o'rganasiz, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta praesentium ullam corporis qui veritatis dolor reiciendis rerum saepe? Ipsa reiciendis temporibus molestias cumque, eos doloremque nobis perferendis numquam repellat!</p>
+                      <tr class="odd:bg-body-light/5">
+                        <td>#2207</td>
+                        <td>Umumiy qon analizlarini behato va tez tekshirish, zamonaviy va behato aniqlash uskunalari..</td>
+                        <td>18.03.2022</td>
+                        <td>$38.00</td>
+                        <td><span class="font-bold text-red-600">Qoniqarsiz</span></td>
+                      </tr>
 
-                    <p>Kurs davomida ancha tajribangiz Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem libero explicabo culpa, perspiciatis ad ratione animi ex atque quo eius magnam provident maxime dolorem architecto dignissimos aspernatur nobis voluptatem?</p>
-
-                    <p>
-                      Kurs yakunida sizdan talab etiladigan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit cupiditate, nemo harum odit nihil dolores voluptates temporibus vel autem maiores dolorem eius tempora beatae voluptate quae tenetur nostrum eum voluptatibus? Maxime quam suscipit ut quibusdam accusamus! Assumenda distinctio nesciunt provident veniam ut hic beatae, accusantium fugiat illum id vitae, neque fugit reprehenderit porro aliquid ea minima obcaecati aliquam quibusdam ipsum eveniet. Iure ab, temporibus maxime eveniet delectus facere, ex, recusandae hic
-                      accusantium illum ullam. Dicta qui fuga impedit. Quis?
-                    </p>
-
-                    <h2 class="!mt-8 text-xl font-semibold">Ushbu yo'nalishda olib borilayotkan izlanishlar</h2>
-
-                    <p>
-                      Kurs yakunida sizdan talab etiladigan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit cupiditate, nemo harum odit nihil dolores voluptates temporibus vel autem maiores dolorem eius tempora beatae voluptate quae tenetur nostrum eum voluptatibus? Maxime quam suscipit ut quibusdam accusamus! Assumenda distinctio nesciunt provident veniam ut hic beatae, accusantium fugiat illum id vitae, neque fugit reprehenderit porro aliquid ea minima obcaecati aliquam quibusdam ipsum eveniet. Iure ab, temporibus maxime eveniet delectus facere, ex, recusandae hic
-                      accusantium illum ullam. Dicta qui fuga impedit. Quis?
-                    </p>
-
-                    <p>Ushbu kursda siz quyidagilarni o'rganasiz, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta praesentium ullam corporis qui veritatis dolor reiciendis rerum saepe? Ipsa reiciendis temporibus molestias cumque, eos doloremque nobis perferendis numquam repellat!</p>
-
-                    <p>Kurs davomida ancha tajribangiz Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem libero explicabo culpa, perspiciatis ad ratione animi ex atque quo eius magnam provident maxime dolorem architecto dignissimos aspernatur nobis voluptatem?</p>
-
-                    <h2 class="!mt-8 text-xl font-semibold">Endokrinologiya nima maqsadlarni o'z ichiga olgan?</h2>
-
-                    <ul class="-mx-2 flex flex-wrap">
-                      <li class="flex w-full items-start space-x-2 p-2 md:w-6/12">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                        </svg>
-
-                        <p class="font-semibold">Haqiqiy bemorlar bilan suhbatlashganda ma'lumotlarni to'g'ri analiz qila olish</p>
-                      </li>
-
-                      <li class="flex w-full items-start space-x-2 p-2 md:w-6/12">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                        </svg>
-
-                        <p class="font-semibold">Shifokor mas'uliyatini bir qismini o'z zimmasiga olishni o'rgatish</p>
-                      </li>
-
-                      <li class="flex items-start space-x-2 p-2 md:w-6/12">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                        </svg>
-
-                        <p class="font-semibold">Shifokor mas'uliyatini bir qismini o'z zimmasiga olishni o'rgatish</p>
-                      </li>
-                    </ul>
-
-                    <hr class="!my-8 border-t-body/10" />
-
-                    <h2 class="!mt-8 text-xl font-semibold">Dars yakunida so'rovnoma</h2>
-
-                    <p class="font-semibold">Quyidagi savolga to'liq javob berilgan variantni tanlang!</p>
-
-                    <ul class="divide-y divide-body/10">
-                      <li class="py-4">
-                        <label for="answer-one" class="flex cursor-pointer items-center space-x-3">
-                          <input type="radio" name="answer" id="answer-one" class="h-5 w-5 flex-shrink-0" />
-                          <span>Endokrinologiya bu: medicinaga kirish aynan shu soha yoki yo'nalishni o'rganishdan boshlanadi.</span>
-                        </label>
-                      </li>
-
-                      <li class="py-4">
-                        <label for="answer-two" class="flex cursor-pointer items-center space-x-3">
-                          <input type="radio" name="answer" id="answer-two" class="h-5 w-5 flex-shrink-0" />
-                          <span>Endokrinologiya bu: medicinaning bir yo'nalishi, qandli diabet, hamda qalqonsimon bez faoliyatini o'rganuvchi yo'nalish.</span>
-                        </label>
-                      </li>
-
-                      <li class="py-4">
-                        <label for="answer-three" class="flex cursor-pointer items-center space-x-3">
-                          <input type="radio" name="answer" id="answer-three" class="h-5 w-5 flex-shrink-0" />
-                          <span>Endokrinologiya bu: bemorlarga to'g'ri tashxis qo'yish hamda osma ukollarni qo'yishni o'rgatadigan yo'nalish.</span>
-                        </label>
-                      </li>
-
-                      <li class="py-4">
-                        <label for="answer-four" class="flex cursor-pointer items-center space-x-3">
-                          <input type="radio" name="answer" id="answer-four" class="h-5 w-5 flex-shrink-0" />
-                          <span>Endokrinologiya bu: stomatologiyaning bir yo'nalishi.</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="!mt-12 flex justify-end">
-                    <button class="btn flex items-center space-x-2 p-4">
-                      <span>Keyingi dars</span>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                      </svg>
-                    </button>
-                  </div>
+                      <tr class="odd:bg-body-light/5">
+                        <td>#1506</td>
+                        <td>Kasallik varaqalarini endi jurnalda yozishga hojat yo'q, uning o'rniga osongina komputerda qayd etish.</td>
+                        <td>15.02.2022</td>
+                        <td>Tekin</td>
+                        <td><span class="font-bold text-green-600">Topshirildi</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>

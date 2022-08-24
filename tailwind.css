@@ -134,10 +134,12 @@ html {
     @apply border-t border-body/10;
   }
 
+  .table-striped th,
   .table-striped td {
-    @apply py-3;
+    @apply py-3 px-1.5;
   }
 
+  .table-striped th:last-child,
   .table-striped td:last-child {
     @apply text-right;
   }

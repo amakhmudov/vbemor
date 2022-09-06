@@ -1468,16 +1468,16 @@ a:hover {
   width: 4rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-9 {
   width: 2.25rem;
 }
 
 .w-52 {
   width: 13rem;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .w-44 {

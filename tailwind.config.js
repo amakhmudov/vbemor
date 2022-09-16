@@ -36,7 +36,10 @@ module.exports = {
           light: "#7a7a7a",
           warning: "#b3813b",
         },
-        star: "#f7c04d",
+        star: {
+          DEFAULT: "#f7c04d",
+          light: '#ccc'
+        }
       },
       aspectRatio: {
         "cert-portrait": "756 / 1080",

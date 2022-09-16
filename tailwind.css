@@ -110,6 +110,24 @@ html {
     @apply ml-3 cursor-pointer;
   }
 
+  .rating-system{
+    @apply inline-flex flex-row-reverse items-center;
+  }
+
+  .rating-system > input{
+    @apply hidden;
+  }
+
+  .rating-system > label{
+    @apply text-star-light cursor-pointer transition;
+  }
+
+  .rating-system > input:checked ~ label,
+  .rating-system > input:checked ~ label ~ label,
+  .rating-system > input:hover ~ label{
+    @apply text-star;
+  }
+
   .badge {
     @apply rounded-full bg-brand/10 px-2 py-1 text-xs font-medium text-brand no-underline transition hover:bg-brand/80 hover:text-white;
   }

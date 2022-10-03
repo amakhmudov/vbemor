@@ -1513,6 +1513,10 @@ a:hover {
   width: 3.5rem;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -1523,10 +1527,6 @@ a:hover {
 
 .w-52 {
   width: 13rem;
-}
-
-.w-44 {
-  width: 11rem;
 }
 
 .max-w-sm {
@@ -1821,10 +1821,6 @@ a:hover {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.whitespace-normal {
-  white-space: normal;
 }
 
 .whitespace-nowrap {
@@ -2471,14 +2467,6 @@ html {
   background-color: rgb(0 113 220 / var(--tw-bg-opacity)) !important;
 }
 
-/* .swiper {
-  @apply w-full h-full;
-} */
-
-/* .swiper-slide {
-  @apply flex items-center justify-center;
-} */
-
 .cinema-thumbs .swiper-slide {
   cursor: pointer;
   opacity: 0.2;
@@ -2625,10 +2613,6 @@ html {
 
 .odd\:bg-body-light\/5:nth-child(odd) {
   background-color: rgb(122 122 122 / 0.05);
-}
-
-.hover\:whitespace-pre:hover {
-  white-space: pre;
 }
 
 .hover\:bg-brand\/10:hover {

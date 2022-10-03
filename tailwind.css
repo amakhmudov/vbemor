@@ -252,14 +252,6 @@ html {
   @apply !h-3 !w-3 !bg-brand;
 }
 
-/* .swiper {
-  @apply w-full h-full;
-} */
-
-/* .swiper-slide {
-  @apply flex items-center justify-center;
-} */
-
 .cinema-thumbs .swiper-slide{
   @apply cursor-pointer opacity-20;
 
